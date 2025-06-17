@@ -1,3 +1,5 @@
+from numpy import array
+
 def ft_load(path: str) -> array:
     """
     Load an image file and return its content.
@@ -5,7 +7,6 @@ def ft_load(path: str) -> array:
     :return: The content of the image file.
     """
     import os
-    from numpy import array
     from PIL import Image    
     
     if not os.path.exists(path):
